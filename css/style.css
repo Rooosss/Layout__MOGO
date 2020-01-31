@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro_inner {
+  text-align: center;
   color: white;
   width: 100%;
   max-width: 880px;
@@ -112,4 +113,112 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid white;
+  padding: 4px 8px;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  color:black;
+  background-color: white;
+}
+
+.slider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.slider_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_item {
+  width: 21%;
+  border-top: 3px solid white;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section_header {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.section_suptitle {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.section_title {
+  font-size: 30px;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+.section_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto;
+
+  background-color: red;
+}
+
+.section_text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_item {
+  width: 30%;
+}
+
+.block {
+  width: 100%;
+  background-color: #95e1d3;
+}
+
+.block_inner {
+  display: flex;
+}
+
+.block_item {
+  flex: 1 1 0;
+  padding: 50px 25px;
+  text-align: center;
+  border-right: 3px solid white;
+  color: white;
+  font-size: 40px;
+}
+
+.block_num {
+  font-weight: bold;
+  color: white;
+  font-size: 80px;
 }
