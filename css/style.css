@@ -8,6 +8,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+hr {
+  height: 1px;
+  width: 100%;
+  margin: 40px 0;
+  border: 0;
+  background-color: #e5e5e5;
+}
+
 *,
 *:before,
 *:after {
@@ -221,4 +229,66 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: white;
   font-size: 80px;
+}
+
+.Services_block {
+  padding-top: 10px;
+}
+
+.Services_suptitle {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+
+.Services_title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Services_title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto;
+
+  background-color: red;
+}
+
+.Services_inner {
+  padding-top: 100px;
+}
+
+.Services_item {
+  flex: 1 1 0;
+  padding-left: 70px;
+  position: relative;
+}
+
+.Services_icon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+}
+
+.inner_item {
+  display: flex;
+}
+
+.Services_text {
+  font-size: 17px;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+.wedo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wedo_item {
+  width: 50%;
 }
