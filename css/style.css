@@ -286,9 +286,58 @@ hr {
 
 .wedo {
   display: flex;
-  justify-content: space-between;
 }
 
 .wedo_item {
   width: 50%;
+}
+
+.accordion_item {
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.accordion_item.active.accordion_content {
+  display: block;
+}
+
+.accordion_header {
+  padding: 15px 20px 15px 60px;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion_header:after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-45deg);
+}
+
+.accordion_icon {
+  position: absolute;
+  top: 10px;;
+  left: 18px;
+  z-index: 1;
+}
+
+.accordion_content {
+  padding: 15px 15px;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.accordion_title {
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
 }
