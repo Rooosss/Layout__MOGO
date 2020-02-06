@@ -297,8 +297,15 @@ hr {
   border: 1px solid #e5e5e5;
 }
 
-.accordion_item.active.accordion_content {
+.accordion_item.active
+.accordion_content:active {
   display: block;
+}
+
+.accordion_item.active
+.accordion_header:after {
+  margin-top: 10px;
+  transform: rotate(-45deg);
 }
 
 .accordion_header {
@@ -316,9 +323,9 @@ hr {
   border-top: 2px solid #ccc;
   border-right: 2px solid #ccc;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 
 .accordion_icon {
@@ -340,4 +347,56 @@ hr {
   font-size: 14px;
   color: #333;
   text-transform: uppercase;
+}
+
+.gray {
+  width: 100%;
+  height: 280px;
+  background-color: #f8f8f8;
+}
+
+.gray_inner {
+  padding: 65px 110px;
+}
+
+.gray_item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.gray_img {
+  position: absolute;
+  border: 4px solid #95e1d3;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.gray_text {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color: #999;
+}
+
+.gray_author {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: black;
+}
+
+.gray_author:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 4px;
+  width: 60px;
+  margin-right: 10px;
+
+  background-color: red;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
 }
