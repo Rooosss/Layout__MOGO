@@ -400,3 +400,18 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
+.gray_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works {
+  display: flex;
+}
+
+.works_col {
+  flex: 1 1 0;
+  max-width: 450px;
+}
