@@ -97,6 +97,8 @@ hr {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  min-height: 820px;
+  position: relative;
 
   background: url("image/back1.jpg") center
   no-repeat;
@@ -396,17 +398,22 @@ hr {
   padding-left: 140px;
 }
 
+.gray2 {
+  width: 100%;
+  height: 200px;
+  background-color: #f8f8f8;
+}
+
 .gray_logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo_item {
-  padding: 60px 0;
+  padding: 30px 0;
+  top: 50%;
 }
 
 .logo_img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -461,8 +468,6 @@ hr {
   height: auto;
 }
 
-/* gray */
-
 .gray_inner {
   display: flex;
   justify-content: space-between;
@@ -471,12 +476,16 @@ hr {
 
 .works {
   display: flex;
-  justify-content: space-between;
+}
+
+.works_col {
+  flex: 1 1 0;
 }
 
 .works_image {
-  width: 459.8px;
-  height: 747px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -485,6 +494,7 @@ hr {
 
 .footer_inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 65px 0;
   margin-top: -85px;
@@ -628,6 +638,12 @@ hr {
   font-style: italic;
 }
 
+.inst_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1230px) {
 
   .intro_suptitle {
@@ -687,9 +703,26 @@ hr {
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .footer_col {
+    width: 100%;
+  }
+
+  .footer_blog {
+    width: 50%;
+  }
+
+  .footer_inst {
+    width: 34%;
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 770px) {
+
+  .intro {
+    min-height: 650px;
+  }
 
   .nav {
     display: none;
@@ -738,10 +771,6 @@ hr {
     width: 100%;
     max-width: 390px;
     padding-bottom: 20px;
-  }
-
-  .gray_logo {
-    padding: 60px 0;
   }
 }
 
@@ -842,7 +871,24 @@ hr {
     height: 3px;
   }
 
-  .gray_logo {
-    justify-content: center;
+  .gray2 {
+    height: 150px;
+  }
+
+  .works_col {
+    flex: none;
+    width: 100%;
+  }
+
+  .works {
+    flex-wrap: wrap;
+  }
+
+  .footer_blog {
+    width: 100%;
+  }
+
+  .footer_inst {
+    width: 65%;
   }
 }
