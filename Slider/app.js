@@ -3,6 +3,7 @@ let slides = document.querySelectorAll(".myslides");
 let dots = document.querySelectorAll(".dot");
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
+let number = document.querySelectorAll(".numbertext");
 let slideindex = 1;
 
 showSlide(slideindex);
@@ -18,6 +19,9 @@ function showSlide(n) {
 	}
 	for (let i = 0; i < dots.length; i++) {
 		dots[i].classList.remove("active");
+	}
+	for (let i = 0; i < number.length; i++) {
+		number[i].innerHTML = slideindex + "/3";
 	}
 	slides[slideindex - 1].style.display = "block";
 	dots[slideindex - 1].classList.add("active");
